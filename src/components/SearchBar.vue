@@ -9,7 +9,7 @@
     name: 'SearchBar',
     methods: {
       onInput: (event) => {
-        console.log(event.target.value);
+        this.$emit('termChange', event.target.value)
       }
     }
   }
