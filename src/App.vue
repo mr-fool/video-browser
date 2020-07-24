@@ -1,6 +1,6 @@
 <template>
   <div id>
-    <SearchBar v-on:termChange="onTermChange"> </SearchBar>
+    <SearchBar @termChange="onTermChange"> </SearchBar>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
     SearchBar
   },
   methods: {
-    onTermChange (searchTerm)  {
+    onTermChange(searchTerm) {
       console.log(searchTerm)
     }
   }
