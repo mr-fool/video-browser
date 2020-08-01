@@ -6,7 +6,8 @@
 
 <script>
 import SearchBar from './components/SearchBar';
-const API_KEY = 'AIzaSyD6mCviaBBfaEdQ-w90Tl83M2KYHXNg6Wg'
+
+const API_KEY = process.env.VUE_APP_YOUTUBE_API;
 
 export default {
   name: 'App',
