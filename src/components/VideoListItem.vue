@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
     <li>
         {{video.snippet.title}}
