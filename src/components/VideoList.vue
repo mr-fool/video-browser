@@ -1,5 +1,6 @@
 <template>
     <ul>
+  
         <VideoListItem 
             v-for="video in videos"
             v-bind:video="video"
