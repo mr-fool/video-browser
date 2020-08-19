@@ -4,7 +4,7 @@
         <VideoListItem 
             v-for="video in videos"
             v-bind:video="video"
-            v-bind:key="video.id"
+            :key="video.id"
         > 
 
         </VideoListItem>
