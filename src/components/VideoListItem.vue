@@ -1,6 +1,7 @@
 <template>
-    <li>
-        {{video.snippet.title}}
+    <li class="list-group-item">
+        <div v-html="video.snippet.title">
+        </div>
     </li>
 
 </template>
