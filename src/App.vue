@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <SearchBar @termChange="onTermChange"> </SearchBar>
+    <VideoDetail :video="" />
     <VideoList @videoSelect="onVideoSelect" :videos="videos"/>
     
   </div>
@@ -9,6 +10,7 @@
 <script>
 import SearchBar from './components/SearchBar';
 import VideoList from './components/VideoList'
+import VideoDetail from './components/VideoDetail'
 import axios from 'axios'
 
 const API_KEY = process.env.VUE_APP_YOUTUBE_API;
@@ -17,7 +19,8 @@ export default {
   name: 'App',
   components: {
     SearchBar,
-    VideoList
+    VideoList,
+    VideoDetail
   },
   data() {
     return {
