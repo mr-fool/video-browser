@@ -1,6 +1,6 @@
 <template>
-    <div>
-        {{video.snippet.title}}
+    <div v-html=video.snippet.title>
+        
     </div>   
 </template>
 
