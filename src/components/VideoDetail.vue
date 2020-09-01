@@ -1,6 +1,10 @@
 <template>
-    <div v-html=video.snippet.title>
-        
+    <div v-if="video">
+        <h4>
+            <div class="details" v-html=video.snippet.title>
+                <p v-html=video.snippet.description></p>
+            </div>
+        </h4>
     </div>   
 </template>
 
