@@ -1,7 +1,7 @@
 <template>
     <div v-if="video">
-            <div>
-                <iframe :src="videoUrl" />
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" :src="videoUrl" />
             </div>
             <div class="details">
                 <h4 v-html=video.snippet.title> </h4>
